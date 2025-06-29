@@ -19,6 +19,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-incrementing ID
     private long id;
 
+    @Column(nullable = false)
+    private String name;
+
     @Column(unique = true,nullable = false)
     private String username;
 
