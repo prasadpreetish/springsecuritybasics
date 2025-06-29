@@ -19,11 +19,11 @@ public class JwtTokenProvider {
     private static final Logger logger = LoggerFactory.getLogger(JwtTokenProvider.class);
 
     // Inject JWT secret key from application.properties
-    @Value("${app.jwt-secret}")
+    @Value("${basicsecurity.jwt-secret}")
     private String jwtSecret;
 
     // Inject JWT expiration in milliseconds from application.properties
-    @Value("${app.jwt-app-expiration-milliseconds}")
+    @Value("${basicsecurity.jwt-expiration-milliseconds}")
     private long jwtExpirationDate;
 
 
